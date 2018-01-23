@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body, html {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	font-family: 'Open Sans', sans-serif;
+}
+.formcontainer {
+	-webkit-box-shadow: 0px 3px 7px -3px rgba(133,133,133,1);
+	-moz-box-shadow: 0px 3px 7px -3px rgba(133,133,133,1);
+	box-shadow: 0px 3px 7px -3px rgba(133,133,133,1);
+	width: 40%;
+	min-width: 600px;
+	background-color: #ffffff;
+	border-radius: 4px;
+	border: 1px solid #d8d8d8;
+	margin: 20px auto 0 auto;
+	padding: 30px 40px;
+	box-sizing: border-box;
+}
+.leadinput__group {
+	margin: 20px 0;
+}
+.leadinput__label {
+	display: block;
+	color: #a30000;
+}
+.leadinput__input {
+	display: block;
+	width: 100%;
+	padding: 12px 0;
+	border: none;
+	border-bottom: 2px solid #262626;
+	font-size: 120%;
+	color: #262626;
+}
+.leadinput__label--required:after {
+	content: " (verplicht)";
+}
+.leadinput__group--submit input{
+	display: block;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #a30000;
+	color: #ffffff;
+	text-align: center;
+	border: 1px solid #700000;
+	width: 100%;
+}
+.leadinput__errormessage {
+	font-size: 80%;
+	color: red;
+}
+textarea {
+	resize: none;
+	font-family: inherit;
+	font-size: inherit;
+}

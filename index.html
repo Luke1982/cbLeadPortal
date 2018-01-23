@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invoer lead</title>
+	<link rel="stylesheet" type="text/css" href="cbLeadPortal.css">
+	<script type="text/javascript" src="validate.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="formcontainer">
+		<h1>Op de hoogte blijven van onze mogelijkheden? Laat uw gegevens achter!</h1>
+		<form class="leadinput__form" action="proceslead.php" method="POST">
+			<div class="leadinput__group">
+				<label for="firstname" class="leadinput__label leadinput__label--required">Voornaam</label>
+				<input type="text" class="leadinput__input leadinput__input--required" name="firstname" size="80" />
+				<span class="leadinput__errormessage"></span>
+			</div>
+			<div class="leadinput__group">
+				<label for="lastname" class="leadinput__label leadinput__label--required">Achternaam</label>
+				<input type="text" class="leadinput__input leadinput__input--required" name="lastname" size="80" />
+				<span class="leadinput__errormessage"></span>
+			</div>
+			<div class="leadinput__group">
+				<label for="companyname" class="leadinput__label">Bedrijfsnaam</label>
+				<input type="text" class="leadinput__input" name="companyname" size="80" />
+			</div>
+			<div class="leadinput__group">
+				<label for="zipcode" class="leadinput__label leadinput__label--required">Postcode</label>
+				<input type="text" class="leadinput__input leadinput__input--required" name="zipcode" maxlength="6" size="80" />
+				<span class="leadinput__errormessage"></span>
+			</div>
+			<div class="leadinput__group">
+				<label for="email" class="leadinput__label leadinput__label--required">E-mail</label>
+				<input type="email" class="leadinput__input leadinput__input--required" name="email" size="80" />
+				<span class="leadinput__errormessage"></span>
+			</div>
+			<div class="leadinput__group">
+				<label for="phone" class="leadinput__label leadinput__label--required">Telefoon</label>
+				<input type="text" class="leadinput__input leadinput__input--required leadinput__input--phone" name="phone" size="80" />
+				<span class="leadinput__errormessage"></span>
+			</div>
+			<div class="leadinput__group">
+				<label for="interest" class="leadinput__label">Interesse in:</label>
+				<select name="interest" class="leadinput__input leadinput__input--select">
+					<option value="Wielservice">Wielservice (balanceren, demonteren etc.)</option>
+					<option value="Inrichting keurstation">Inrichting keurstation</option>
+					<option value="Complete werkplaatsinrichting">Complete werkplaatsinrichting</option>
+					<option value="Begeleiding nieuwbouw">Begeleiding nieuwbouw</option>
+					<option value="Keuring hefbruggen">Keuring hefbruggen</option>
+					<option value="Keuring overige werkplaatsapparatuur">Keuring overige werkplaatsapparatuur</option>
+					<option value="Anders, namelijk:">Anders, namelijk:</option>
+				</select>
+			</div>
+			<div class="leadinput__group">
+				<label for="description" class="leadinput__label">Anders, namelijk:</label>
+				<textarea class="leadinput__input leadinput__input" name="description" size="80" cols="5"></textarea>
+			</div>
+			<div class="leadinput__group--submit">
+				<input type="submit" name="submit" value="Versturen">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
