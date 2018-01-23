@@ -57,3 +57,15 @@ textarea {
 	font-family: inherit;
 	font-size: inherit;
 }
+@media screen and (min-width: 0px) and (max-width : 960px) {
+	html {
+		font-size: 21px;
+	}
+	h1 {
+		font-size: 28px;
+	}
+	.formcontainer {
+		width: 100%;
+		min-width: 0;
+	}
+}
